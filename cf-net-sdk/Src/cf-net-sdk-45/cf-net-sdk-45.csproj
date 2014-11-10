@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D2F1153-E201-456C-9022-81C9E213CED2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cf_net_sdk_45</RootNamespace>
+    <AssemblyName>cf_net_sdk_45</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\net45\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\net45\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersionInfo.cs">
+      <Link>Properties\AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Application.cs">
+      <Link>Application.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\ApplicationStatus.cs">
+      <Link>ApplicationStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryApplicationPayloadConverter.cs">
+      <Link>CloudFoundryApplicationPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryAuthenticationPayloadConverter.cs">
+      <Link>CloudFoundryAuthenticationPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryClient.cs">
+      <Link>CloudFoundryClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryDomainPayloadConverter.cs">
+      <Link>CloudFoundryDomainPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryInstanceInfoPayloadConverter.cs">
+      <Link>CloudFoundryInstanceInfoPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryInstancePayloadConverter.cs">
+      <Link>CloudFoundryInstancePayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryJobPayloadConverter.cs">
+      <Link>CloudFoundryJobPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryOrganizationPayloadConverter.cs">
+      <Link>CloudFoundryOrganizationPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryPasswordCredential.cs">
+      <Link>CloudFoundryPasswordCredential.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryPocoClient.cs">
+      <Link>CloudFoundryPocoClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryPocoClientFactory.cs">
+      <Link>CloudFoundryPocoClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryRestClient.cs">
+      <Link>CloudFoundryRestClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryRestClientFactory.cs">
+      <Link>CloudFoundryRestClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryRoutePayloadConverter.cs">
+      <Link>CloudFoundryRoutePayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundrySpacePayloadConverter.cs">
+      <Link>CloudFoundrySpacePayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\CloudFoundryUserPayloadConverter.cs">
+      <Link>CloudFoundryUserPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\DisposableClass.cs">
+      <Link>Common\Http\DisposableClass.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\HttpAbstractionClient.cs">
+      <Link>Common\Http\HttpAbstractionClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\HttpAbstractionClientFactory.cs">
+      <Link>Common\Http\HttpAbstractionClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\HttpHeadersAbstraction.cs">
+      <Link>Common\Http\HttpHeadersAbstraction.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\HttpMultiPartFormDataAbstraction.cs">
+      <Link>Common\Http\HttpMultiPartFormDataAbstraction.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\HttpResponseAbstraction.cs">
+      <Link>Common\Http\HttpResponseAbstraction.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\IHttpAbstractionClient.cs">
+      <Link>Common\Http\IHttpAbstractionClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\IHttpAbstractionClientFactory.cs">
+      <Link>Common\Http\IHttpAbstractionClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\IHttpHeadersAbstraction.cs">
+      <Link>Common\Http\IHttpHeadersAbstraction.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\IHttpMultiPartFormDataAbstraction.cs">
+      <Link>Common\Http\IHttpMultiPartFormDataAbstraction.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\Http\IHttpResponseAbstraction.cs">
+      <Link>Common\Http\IHttpResponseAbstraction.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ObjectExtentions.cs">
+      <Link>Common\ObjectExtentions.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocationAssemblyScanner.cs">
+      <Link>Common\ServiceLocation\IServiceLocationAssemblyScanner.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocationManager.cs">
+      <Link>Common\ServiceLocation\IServiceLocationManager.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocationOverrideManager.cs">
+      <Link>Common\ServiceLocation\IServiceLocationOverrideManager.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocationRegistrar.cs">
+      <Link>Common\ServiceLocation\IServiceLocationRegistrar.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocationRegistrarFactory.cs">
+      <Link>Common\ServiceLocation\IServiceLocationRegistrarFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocationRuntimeManager.cs">
+      <Link>Common\ServiceLocation\IServiceLocationRuntimeManager.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\IServiceLocator.cs">
+      <Link>Common\ServiceLocation\IServiceLocator.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\RuntimeRegistrationManager.cs">
+      <Link>Common\ServiceLocation\RuntimeRegistrationManager.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\ServiceLocationAssemblyScanner.cs">
+      <Link>Common\ServiceLocation\ServiceLocationAssemblyScanner.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\ServiceLocationManager.cs">
+      <Link>Common\ServiceLocation\ServiceLocationManager.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\ServiceLocationRegistrarFactory.cs">
+      <Link>Common\ServiceLocation\ServiceLocationRegistrarFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Common\ServiceLocation\ServiceLocator.cs">
+      <Link>Common\ServiceLocation\ServiceLocator.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Domain.cs">
+      <Link>Domain.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Entity.cs">
+      <Link>Entity.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Instance.cs">
+      <Link>Instance.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\InstanceInfo.cs">
+      <Link>InstanceInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\InstanceState.cs">
+      <Link>InstanceState.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IApplicationPayloadConverter.cs">
+      <Link>Interfaces\IApplicationPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IAuthenticationPayloadConverter.cs">
+      <Link>Interfaces\IAuthenticationPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\ICloudFoundryClient.cs">
+      <Link>Interfaces\ICloudFoundryClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\ICloudFoundryPocoClient.cs">
+      <Link>Interfaces\ICloudFoundryPocoClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\ICloudFoundryPocoClientFactory.cs">
+      <Link>Interfaces\ICloudFoundryPocoClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\ICloudFoundryRestClient.cs">
+      <Link>Interfaces\ICloudFoundryRestClient.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\ICloudFoundryRestClientFactory.cs">
+      <Link>Interfaces\ICloudFoundryRestClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IDomainPayloadConverter.cs">
+      <Link>Interfaces\IDomainPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IInstanceInfoPayloadConverter.cs">
+      <Link>Interfaces\IInstanceInfoPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IInstancePayloadConverter.cs">
+      <Link>Interfaces\IInstancePayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IJobPayloadConverter.cs">
+      <Link>Interfaces\IJobPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IOrganizationPayloadConverter.cs">
+      <Link>Interfaces\IOrganizationPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IPasswordAuthCredential.cs">
+      <Link>Interfaces\IPasswordAuthCredential.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IRoutePayloadConverter.cs">
+      <Link>Interfaces\IRoutePayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\ISpacePayloadConverter.cs">
+      <Link>Interfaces\ISpacePayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Interfaces\IUserPayloadConverter.cs">
+      <Link>Interfaces\IUserPayloadConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Job.cs">
+      <Link>Job.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\JobState.cs">
+      <Link>JobState.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Organization.cs">
+      <Link>Organization.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Route.cs">
+      <Link>Route.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\ServiceRegistrar.cs">
+      <Link>ServiceRegistrar.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\Space.cs">
+      <Link>Space.cs</Link>
+    </Compile>
+    <Compile Include="..\cf-net-sdk-40\User.cs">
+      <Link>User.cs</Link>
+    </Compile>
+    <Compile Include="Common\ReflectionExtentions.cs" />
+    <Compile Include="Common\StreamExtentions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.22\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.22\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.22\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
